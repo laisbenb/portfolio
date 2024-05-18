@@ -1,0 +1,25 @@
+@import './reset.css';
+
+body {
+    margin: 0 30rem;
+}
+
+
+/* == NAVIGATION == */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem;
+    & a {
+        text-decoration: none;
+        color: hsl(0, 0%, 0%, 65%);
+        &:hover {
+          color: hsl(0, 0%, 0%, 100%);
+        }
+    }
+    & a.active {
+        /* temporary visual */
+        background-color: green;
+    }
+}

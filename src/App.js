@@ -1,5 +1,4 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import './styles/reset.css';
 import './styles/App.css';
 import Root from './layouts/Root';
 import { ROUTES } from './routes/routes';
