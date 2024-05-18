@@ -4,7 +4,6 @@ body {
     margin: 0 30rem;
 }
 
-
 /* == NAVIGATION == */
 .nav {
     display: flex;
@@ -27,4 +26,15 @@ body {
 .nav__links {
     display: flex;
     gap: 5rem;
+}
+
+/* == FOOTER == */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
 }
