@@ -86,3 +86,38 @@ footer {
         }
     }
 }
+
+/* == ABOUTPAGE == */
+
+.aboutPage, 
+.aboutPage--content,
+.aboutPage--skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .aboutPage--skills-skillbox {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 70rem;
+        flex-wrap: wrap;
+
+        & .aboutPage--skills-skillCard {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 10rem;
+            border: 2px solid black;
+            border-radius: 2rem;
+
+            padding: .5rem;
+            margin: .5rem;
+
+            & img {
+                width: 2.5rem;
+            }
+        }
+    }
+}

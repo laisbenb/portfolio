@@ -1,20 +1,22 @@
-const skills = [
+export const skills = [
     {
-        "title": "html",
+        "title": "HTML",
         "image": "./media/images/html_logo.png"
     },
     {
-        "title": "css",
+        "title": "CSS",
         "image": "./media/images/css_logo.png"
     },
     {
-        "title" : "js",
+        "title" : "JS",
         "image" : "./media/images/js_logo.png"
     },
     {
-        "title" : "react",
+        "title" : "React",
         "image" : "./media/images/react_logo.png"
+    },
+    {
+        "title" : "NodeJS",
+        "image" : "./media/images/nodejs_logo.png"
     }
 ];
-
-export default skills;
