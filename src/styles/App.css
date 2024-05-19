@@ -46,6 +46,11 @@ footer {
     gap: .2rem;
 
     padding: 1rem;
+    margin: 0 -20rem;
+
+    position: absolute;
+    bottom: 0%;
+    left: 55%;
 }
 
 /* == HOMEPAGE == */
@@ -53,8 +58,11 @@ footer {
 .homePage {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-right: 10rem;
+    gap: 15rem;
+
+    position: absolute;
+    top: 30%;
+    left: 25%;
 }
 
 .homePage--content {
@@ -64,7 +72,17 @@ footer {
     & .homePage--content-text {
         width: 25rem;
     }
-    & .homePage--content-downloadBtn {
-        margin: 1rem 0;   
+    & .homePage--content-links {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 0;
+        & img {
+            width: 3rem;
+        }
+        & .homePage--content-downloadBtn a{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 }

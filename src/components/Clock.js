@@ -29,6 +29,7 @@ function liveClock() {
 export default function Clock() {
     const [time, setTime] = useState(liveClock());
 
+    // update clock every 1s
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(liveClock());
