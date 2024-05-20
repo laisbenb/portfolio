@@ -3,6 +3,7 @@ import './styles/App.css';
 import Root from './layouts/Root';
 import { ROUTES } from './routes/routes';
 import { About, Contact, Home, Portfolio } from './pages';
+import { Helmet } from 'react-helmet';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Root />}>
@@ -16,6 +17,9 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Portfolio | Laïs Ben Belgacem</title>
+      </Helmet>
       <RouterProvider router={router} />
     </>
   );

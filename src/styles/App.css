@@ -37,6 +37,12 @@ body {
     gap: 5rem;
 }
 
+.nav--clock {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
 /* == FOOTER == */
 
 footer {

@@ -38,7 +38,7 @@ export default function Clock() {
         return () => clearInterval(interval);
     }, []);
   return (
-    <div className='nav__clock'>
+    <div className='nav--clock'>
         {time}
     </div>
   )
