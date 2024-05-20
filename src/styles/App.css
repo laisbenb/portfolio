@@ -37,6 +37,7 @@ body {
     gap: 5rem;
 }
 
+/* clock */
 .nav--clock {
     position: absolute;
     top: 3%;
