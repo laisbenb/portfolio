@@ -1,5 +1,6 @@
 import React from 'react';
 import Skills from '../components/Skills';
+import Tools from '../components/Tools';
 
 export default function About() {
   return (
@@ -17,7 +18,9 @@ export default function About() {
       </div>
       <div className='aboutPage--skills'>
         <h2>My skills</h2>
-        <Skills />  
+        <Skills />
+        <h2>My tools</h2>
+        <Tools />
       </div>
     </div>
   );
