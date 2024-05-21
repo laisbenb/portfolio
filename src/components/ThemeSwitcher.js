@@ -14,8 +14,8 @@ export default function ThemeSwitcher() {
 
   return (
     <div>
-        <button className='darkmodeBtn' onClick={handleClick}>
-            <p>darkmode</p>
+        <button className='darkModeBtn' onClick={handleClick}>
+            <img src={isDark ? './media/images/moon_icon.png' : './media/images/sun_icon.png' } alt={isDark ? 'moon' : 'sun' } />
         </button>
     </div>
   )
