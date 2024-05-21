@@ -13,6 +13,17 @@ body {
     }
 }
 
+.dark {
+    background-color: black;
+    color: white;
+    & h2,
+    h3,
+    p, 
+    .nav__links--link {
+        color: white;
+    }
+}
+
 /* == NAVIGATION == */
 .nav {
     display: flex;

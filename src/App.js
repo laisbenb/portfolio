@@ -4,6 +4,7 @@ import Root from './layouts/Root';
 import { ROUTES } from './routes/routes';
 import { About, Contact, Home, Portfolio } from './pages';
 import { Helmet } from 'react-helmet';
+import { ThemeArea } from './context/ThemeContext';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Root />}>
@@ -17,10 +18,12 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
   return (
     <>
-      <Helmet>
-        <title>Portfolio | Laïs Ben Belgacem</title>
-      </Helmet>
-      <RouterProvider router={router} />
+      <ThemeArea>
+        <Helmet>
+          <title>Portfolio | Laïs Ben Belgacem</title>
+        </Helmet>
+        <RouterProvider router={router} />
+      </ThemeArea>
     </>
   );
 }
