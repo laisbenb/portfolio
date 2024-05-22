@@ -47,25 +47,6 @@ body {
     color: hsl(183, 47%, 53%);
 }
 
-.light {
-    transition: background-color 0.5s ease;
-
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 0%);
-    & .nav {
-        background-color: hsl(180, 87%, 94%);
-    }
-    & h2,
-    h3,
-    p {
-        color: black;
-    }
-    & .homePage--content-links a {
-        color: black;
-        fill: black;
-    }
-}
-
 /* == NAVIGATION == */
 .nav {
     background-color: hsl(222, 16%, 28%);
@@ -106,10 +87,6 @@ body {
     & img {
         width: 2.5rem;
         padding: .3rem;
-    }
-
-    & .social-icon {
-        fill: black;
     }
 }
 
@@ -184,16 +161,12 @@ footer {
     }
 }
 
-.social-icon {
-    fill: currentColor;
-}
-
 .homePage--content-links a {
     color: white;
 }
 
 
-/* == ABOUTPAGE == */
+/* == ABOUT PAGE == */
 
 .aboutPage, 
 .aboutPage--content,
@@ -201,9 +174,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    text-align: center;
+    line-height: 1.9rem;
 
     font-size: 1.1rem;
-
     & .aboutPage--skills-skillbox {
         display: flex;
         justify-content: center;
@@ -235,5 +210,97 @@ footer {
     & h2 {
         padding: 2rem 0;
         font-size: 2rem;
+    }
+}
+
+/* == PORTFOLIO PAGE == */
+
+.portfolioPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    & h2,
+    & p {
+        padding: 1rem;
+    }
+}
+
+.portfolioPage--projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    max-width: 62rem;
+
+    & .portfolioPage--projects-projectCard {
+        background-color: hsl(219, 16%, 41%);
+        width: 100%;
+        max-width: 30rem;
+        justify-content: center;
+
+        padding: 2rem;
+
+        & img {
+            margin-bottom: 1rem;
+            border-radius: 2rem;
+            box-shadow: 10px 10px 50px black;
+            transition: transform 2s ease;
+        }
+
+        & img:hover {
+            transform: scale(1.1);
+        }
+
+        & .portfolioPage--projects-projectCard-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & p  {
+            padding: 1rem .5rem;
+        }
+
+        & .title-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            & h3 {
+                font-size: 2rem;
+            }
+
+            & a {
+                width: 3rem;
+                color: white;
+            }
+        }
+    }
+}
+
+/* == LIGHT MODE == */
+.light {
+    transition: background-color 0.5s ease;
+
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    & .nav,
+    & .portfolioPage--projects-projectCard {
+        background-color: hsl(180, 87%, 94%);
+        transition: background-color 0.5s ease;
+    }
+    & h2,
+    h3,
+    p {
+        color: black;
+    }
+    & .social-logo {
+        color: black;
+        fill: black;
+    }
+    & .blueText {
+        color: hsl(183, 47%, 53%);
     }
 }
