@@ -26,5 +26,9 @@ export const skills = [
     {
         title : "JSON",
         image : "./media/images/skills/json_logo.png"
+    },
+    {
+        title : "Handlebars",
+        image : "./media/images/skills/handlebars_logo.png"
     }
 ];

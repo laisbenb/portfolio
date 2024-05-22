@@ -18,5 +18,9 @@ export const tools = [
     {
         title : "NPM",
         image : "./media/images/tools/npm_logo.png" 
+    },
+    {
+        title : "Brave",
+        image : "./media/images/tools/brave_logo.png"
     }
 ];
