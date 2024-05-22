@@ -1,6 +1,28 @@
 @import './reset.css';
 
+
+/* fonts */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+/* == GLOBAL == */
 body {
+    font-family: "Poppins", sans-serif;
     margin: 0 20rem;
     color: black;
 
@@ -26,6 +48,7 @@ body {
     .nav__links--link {
         color: white;
     }
+    
     & .darkModeBtn {
         background-color: black;
         border: 2px solid white;
