@@ -5,7 +5,7 @@ export default function ThemeSwitcher() {
     const [isDark, setIsDark] = useContext(ThemeMode);
 
     useEffect(() => {
-        isDark ? document.body.classList.add("dark") : document.body.classList.remove("dark");
+        isDark ? document.body.classList.add("light") : document.body.classList.remove("light");
     }, [isDark]);
 
     const handleClick = () => {
@@ -14,8 +14,8 @@ export default function ThemeSwitcher() {
 
   return (
     <div>
-        <button className='darkModeBtn' onClick={handleClick}>
-            <img src={isDark ? './media/images/moon_icon.png' : './media/images/sun_icon.png' } alt={isDark ? 'moon' : 'sun' } />
+        <button className='lightModeBtn' onClick={handleClick}>
+            <img src={isDark ? './media/images/sun_icon.png' : './media/images/moon_icon.png' } alt={isDark ? 'sun' : 'moon' } />
         </button>
     </div>
   )

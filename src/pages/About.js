@@ -12,6 +12,7 @@ export default function About() {
           I love to make the web more to the open world. I am still a student computer science and programming at ArteveldeHogeschool at Ghent, Belgium. 
           I am available for any kind of job that suits my interests.
         </p>
+        <br></br>
         <p>
           When I'm not coding I like to spent my time playing videogames, watching anime or sharing moments with my friends and family.
         </p>

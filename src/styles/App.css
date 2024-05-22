@@ -24,9 +24,15 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0 20rem;
-    color: black;
+    background-color: hsl(220, 16%, 36%);
+    color: hsl(0, 0%, 100%);
 
     transition: background-color 0.5s ease;
+    & h2,
+    h3,
+    p {
+        color: white;
+    }
 }
 
 .main {
@@ -37,36 +43,42 @@ body {
     }
 }
 
-.dark {
+.light {
     transition: background-color 0.5s ease;
 
-    background-color: black;
-    color: white;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    & .nav {
+        background-color: hsl(180, 87%, 94%);
+    }
     & h2,
     h3,
-    p, 
-    .nav__links--link {
-        color: white;
+    p {
+        color: black;
     }
-    
-    & .darkModeBtn {
-        background-color: black;
-        border: 2px solid white;
+    & .homePage--content-links a {
+        color: black;
+        fill: black;
     }
 }
 
 /* == NAVIGATION == */
 .nav {
+    background-color: hsl(222, 16%, 28%);
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     gap: 5rem;
     padding: 2rem;
+    margin: 0 -20rem;
+
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+
     & a {
         text-decoration: none;
-        color: hsl(0, 0%, 0%, 65%);
-        &:hover {
-          color: hsl(0, 0%, 0%, 100%);
-        }
+        color: hsl(183, 47%, 53%);
+        font-size: 1.3rem;
     }
     & a.active {
         /* temporary visual */
@@ -80,27 +92,27 @@ body {
 }
 
 /* dark mode */
-.darkModeBtn {
+.lightModeBtn {
     transition: background-color 0.5s ease;
 
     border-radius: 1rem;
-    background-color: white;
-
-    position: absolute;
-    top: 3%;
-    left: 5%;
+    background-color: hsl(183, 47%, 53%);
 
     & img {
         width: 2.5rem;
         padding: .3rem;
     }
+
+    & .social-icon {
+        fill: black;
+    }
 }
 
 /* clock */
 .nav--clock {
-    position: absolute;
-    top: 3%;
-    right: 5%;
+    color: hsl(183, 47%, 53%);
+    font-size: 2rem;
+
 }
 
 /* == FOOTER == */
@@ -142,16 +154,32 @@ footer {
         display: flex;
         gap: 2rem;
         padding: 2rem 0;
-        & img {
+        & img,
+        & svg {
             width: 3rem;
         }
-        & .homePage--content-downloadBtn a{
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+        & .homePage--content-downloadBtn {
+            background-color: hsl(183, 47%, 53%);
+            border: none;
+            border-radius: .8rem;
+            & a {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                color: hsl(0, 0%, 100%);
+            }
         }
     }
 }
+
+.social-icon {
+    fill: currentColor;
+}
+
+.homePage--content-links a {
+    color: white;
+}
+
 
 /* == ABOUTPAGE == */
 
@@ -164,18 +192,19 @@ footer {
 
     & .aboutPage--skills-skillbox {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
-        max-width: 70rem;
+        max-width: 50rem;
         flex-wrap: wrap;
 
         & .aboutPage--skills-skillCard {
+            background-color: hsl(183, 47%, 53%);
+
             display: flex;
             align-items: center;
             justify-content: space-around;
 
             width: 10rem;
-            border: 2px solid black;
             border-radius: 2rem;
 
             padding: .5rem;
@@ -188,6 +217,6 @@ footer {
     }
     
     & h2 {
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
 }
