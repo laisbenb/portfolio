@@ -244,9 +244,10 @@ footer {
 .portfolioPage--projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
+    justify-content: center;
 
-    max-width: 62rem;
+    max-width: 70rem;
     margin-bottom: 5rem;
 
     & .portfolioPage--projects-projectCard {
@@ -256,6 +257,9 @@ footer {
         justify-content: center;
 
         padding: 2rem;
+
+        border-radius: 2rem;
+        box-shadow: 1rem 1rem 2rem hsl(183, 47%, 53%);
 
         & .example {
             margin-bottom: 1rem;

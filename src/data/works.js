@@ -4,7 +4,7 @@ export const projects = [
         links : {
            github : "https://github.com/laisbenb/portfolio"
         },
-        description : "A portfolio website made with ReactJS, HTML, CSS and JavaScript. A toggle button for a dark or light theme.",
+        description : "A portfolio website made with ReactJS, HTML, CSS and JavaScript. A toggle button for a dark or light theme. This personal website helped me a lot about learning for react.",
         languages : [
             {
                 title : "HTML",
@@ -23,7 +23,7 @@ export const projects = [
                 image : "./media/images/skills/react_logo.png"
             }
         ],
-        image : "./"
+        image : "./media/images/projects/portfolio_project.png"
     },
     {
         title : "Gentse feesten",
@@ -51,7 +51,8 @@ export const projects = [
     {
         title : "How to quiz",
         links : {
-           github : "https://github.com/pgmgent-atwork2/project-1-workshop-start-2-code-mela"
+           github : "https://github.com/pgmgent-atwork2/project-1-workshop-start-2-code-mela",
+           live : "https://pgmgent-atwork2.github.io/project-1-workshop-start-2-code-mela/"
         },
         description : "A little project on behalf of ArteveldeHogeschool. A project to motivate secondary school students to start programming. I made this project with HTML, CSS and JavaScript.",
         languages : [
