@@ -294,6 +294,7 @@ footer {
         & .portfolioPage--projects-projectCard__languages {
             display: flex;
             gap: 1rem;
+            padding: 1rem 0;
 
             & .language--card {
                 display: flex;
@@ -319,8 +320,8 @@ footer {
                 background-color: hsl(49, 91%, 50%);
             }
 
-            & .React {
-
+            & .REACT {
+                background-color: hsl(191, 65%, 40%);
             }
             
             & img {

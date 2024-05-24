@@ -19,7 +19,7 @@ export const projects = [
                 image : "./media/images/skills/js_logo.png"
             },
             {
-                title : "React",
+                title : "REACT",
                 image : "./media/images/skills/react_logo.png"
             }
         ],
