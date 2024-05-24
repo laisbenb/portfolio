@@ -70,9 +70,11 @@ body {
         color: hsl(183, 47%, 53%);
         font-size: 1.3rem;
     }
+    & a:hover {
+        border-bottom: 3px solid hsl(183, 47%, 40%);
+    }
     & a.active {
-        /* temporary visual */
-        background-color: green;
+        border-bottom: 3px solid hsl(183, 47%, 40%);
     }
 }
 
