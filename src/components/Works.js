@@ -9,7 +9,7 @@ export default function Works() {
         {
             projects.map((project) => (
                 <div className='portfolioPage--projects-projectCard'>
-                    <img src={project.image} alt='project' />
+                    <img className='example' src={project.image} alt='project' />
                     <div className='title-links'>
                         <h3 className='blueText'>{project.title}</h3>
                         <div className='portfolioPage--projects-projectCard-links'>
@@ -20,6 +20,16 @@ export default function Works() {
                                 )
                             }
                         </div>
+                    </div>
+                    <div className='portfolioPage--projects-projectCard__languages'>
+                        {
+                           project.languages.map((language) => (
+                            <div className={`${language.title} language--card`}>
+                                <img src={language.image} alt={language.title} />
+                                <p>{language.title}</p>
+                            </div>
+                           ))
+                        }
                     </div>
                     <p>{project.description}</p>
                 </div>

@@ -37,6 +37,9 @@ body {
 
 .main {
     color: black;
+    min-height: 100%;
+    position: relative;
+
     & a {
         color: black;
         text-decoration: none;
@@ -60,6 +63,8 @@ body {
 
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 
+    z-index: 10;
+
     & a {
         text-decoration: none;
         color: hsl(183, 47%, 53%);
@@ -74,6 +79,8 @@ body {
 .nav__links {
     display: flex;
     gap: 5rem;
+
+    z-index: 5;
 }
 
 /* dark mode */
@@ -100,6 +107,8 @@ body {
 /* == FOOTER == */
 
 footer {
+    background-color: hsl(222, 16%, 28%);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,9 +117,10 @@ footer {
     padding: 1rem;
     margin: 0 -20rem;
 
-    position: absolute;
+    position: fixed;
     bottom: 0%;
-    left: 55%;
+    width: 100%;
+    font-size: .7rem;
 }
 
 /* == HOMEPAGE == */
@@ -121,10 +131,12 @@ footer {
     gap: 8rem;
 
     position: absolute;
-    top: 30%;
+    top: 0%;
     left: 25%;
 
     font-size: 1.3rem;
+
+    z-index: 1;
 
     & .homePage-pfp {
         transform: translateY(-5rem);
@@ -233,6 +245,7 @@ footer {
     gap: 2rem;
 
     max-width: 62rem;
+    margin-bottom: 5rem;
 
     & .portfolioPage--projects-projectCard {
         background-color: hsl(219, 16%, 41%);
@@ -242,14 +255,14 @@ footer {
 
         padding: 2rem;
 
-        & img {
+        & .example {
             margin-bottom: 1rem;
             border-radius: 2rem;
             box-shadow: 10px 10px 50px black;
             transition: transform 2s ease;
         }
 
-        & img:hover {
+        & .example:hover {
             transform: scale(1.1);
         }
 
@@ -277,6 +290,43 @@ footer {
                 color: white;
             }
         }
+
+        & .portfolioPage--projects-projectCard__languages {
+            display: flex;
+            gap: 1rem;
+
+            & .language--card {
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+                border-radius: 1rem;
+                padding: .3rem;
+
+                font-weight: bold;
+
+            }
+
+            & .HTML {
+                background-color: #E75028;
+            }
+
+            & .CSS {
+                background-color: hsl(200, 65%, 48%);
+
+            }
+
+            & .JS {
+                background-color: hsl(49, 91%, 50%);
+            }
+
+            & .React {
+
+            }
+            
+            & img {
+                width: 1.5rem;
+            }
+        }
     }
 }
 
@@ -302,5 +352,9 @@ footer {
     }
     & .blueText {
         color: hsl(183, 47%, 53%);
+    }
+    & footer {
+        background-color: hsl(180, 87%, 94%);
+        transition: background-color 0.5s ease;
     }
 }
