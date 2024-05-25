@@ -1,42 +1,82 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-
-
+import React from 'react';
+import { useState } from 'react';
 
 export default function Contact() {
-  const form = useRef();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-  const sendEmail = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_i2gfxzr', 'template_eu9wqv2', form.current, {
-        publicKey: 'GZOwweRRjF19AX_XH',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
         },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+        body: JSON.stringify(formData)
+      });
+      const result = await response.json();
+      if (response.ok) {
+        alert('Email sent successfully');
+      } else {
+        alert('Error sending email: ' + result.error);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error sending email');
+    }
   };
 
   return (
-    <div className='contactPage main'>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
+    <div>
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Message:
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <br />
+        <button type="submit">Send</button>
       </form>
-      <div className='contactPage-right'>
-         
-      </div>
     </div>
   );
-};
+}

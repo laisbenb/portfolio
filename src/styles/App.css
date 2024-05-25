@@ -301,6 +301,7 @@ footer {
             display: flex;
             gap: 1rem;
             padding: 1rem 0;
+            flex-wrap: wrap;
 
             & .language--card {
                 display: flex;
@@ -328,6 +329,14 @@ footer {
 
             & .REACT {
                 background-color: hsl(191, 65%, 40%);
+            }
+
+            & .NODEJS {
+                background-color: hsl(85, 66%, 47%);
+            }
+
+            & .EXPRESS {
+                background-color: hsl(210, 11%, 15%);
             }
             
             & img {

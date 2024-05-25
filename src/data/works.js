@@ -21,6 +21,14 @@ export const projects = [
             {
                 title : "REACT",
                 image : "./media/images/skills/react_logo.png"
+            },
+            {
+                title : "NODEJS",
+                image : "./media/images/skills/nodejs_logo.png"
+            },
+            {
+                title : "EXPRESS",
+                image : "./media/images/skills/expressjs_logo_white.png"
             }
         ],
         image : "./media/images/projects/portfolio_project.png"
