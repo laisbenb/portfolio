@@ -30,5 +30,9 @@ export const skills = [
     {
         title : "Handlebars",
         image : "./media/images/skills/handlebars_logo.png"
+    },
+    {
+        title : "C++",
+        image : "./"
     }
 ];

@@ -12,7 +12,7 @@ export default function Home() {
           <h3>Developer</h3>
           <h2>From <span className='blueText'>Belgium</span></h2>
           <p>
-            Back-end web developer. Coffee-fueled <span className='blueText'>coder</span> and pizza powered <span className='blueText'>problem solver</span>.
+            Back-end web developer. Comfortable coffee <span className='blueText'>coder</span> and pizza powered <span className='blueText'>problem solver</span>.
           </p>
         </div>
         <div  className='homePage--content-links'>
