@@ -7,12 +7,13 @@ export default function Skills() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
+  console.log('Data logged: ',  data);
 
   return (
     <div className='aboutPage--skills-skillbox'>
-      {data.skills.map((skill) => (
+      {data.technieks.map((skill) => (
         <div key={skill.title} className='aboutPage--skills-skillCard'>
-          <img src={skill.image} alt={skill.title} />
+          <img src={skill.image.url} alt={skill.title} />
           <p>{skill.title}</p>
         </div>
       ))}
