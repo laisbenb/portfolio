@@ -327,15 +327,15 @@ footer {
                 background-color: hsl(49, 91%, 50%);
             }
 
-            & .REACT {
+            & .React {
                 background-color: hsl(191, 65%, 40%);
             }
 
-            & .NODEJS {
+            & .NodeJS {
                 background-color: hsl(85, 66%, 47%);
             }
 
-            & .EXPRESS {
+            & .ExpressJS {
                 background-color: hsl(210, 11%, 15%);
             }
             

@@ -11,10 +11,10 @@ export default function Skills() {
 
   return (
     <div className='aboutPage--skills-skillbox'>
-      {data.technieks.map((skill) => (
-        <div key={skill.title} className='aboutPage--skills-skillCard'>
-          <img src={skill.image.url} alt={skill.title} />
-          <p>{skill.title}</p>
+      {data.skills.map((skill) => (
+        <div key={skill.skillTitle} className='aboutPage--skills-skillCard'>
+          <img src={skill.skillImage.url} alt={skill.skillTitle} />
+          <p>{skill.skillTitle}</p>
         </div>
       ))}
     </div>
