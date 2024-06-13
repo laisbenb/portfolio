@@ -30,6 +30,6 @@ function App() {
       </ThemeArea>
     </>
   );
-}
+};
 
 export default App;
