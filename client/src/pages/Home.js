@@ -29,5 +29,5 @@ export default function Home() {
       </div>
         <img className='homePage-pfp' src='./media/images/homepage_picture.png' alt='pfp'/>
     </div>
-  )
-}
+  );
+};

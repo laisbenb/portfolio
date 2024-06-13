@@ -1,5 +1,5 @@
-import React from 'react'
-import Works from '../components/Works'
+import React from 'react';
+import Works from '../components/Works';
 
 export default function Portfolio() {
   return (
@@ -8,5 +8,5 @@ export default function Portfolio() {
       <p>Here are some of the projects I've worked on.</p>
       <Works />
     </div>
-  )
-}
+  );
+};

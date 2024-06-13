@@ -32,11 +32,11 @@ export default function Contact() {
         alert('Email sent successfully');
       } else {
         alert('Error sending email: ' + result.error);
-      }
+      };
     } catch (error) {
       console.error('Error:', error);
       alert('Error sending email');
-    }
+    };
   };
 
   return (
@@ -79,4 +79,4 @@ export default function Contact() {
       </form>
     </div>
   );
-}
+};

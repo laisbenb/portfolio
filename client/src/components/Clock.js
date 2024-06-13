@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 function liveClock() {
 
@@ -21,7 +21,7 @@ function liveClock() {
         setMinute = '0' + minute;
     } else {
         setMinute = minute;
-    }
+    };
 
     return `${setHour}:${setMinute}`;
 };
@@ -41,5 +41,5 @@ export default function Clock() {
     <div className='nav--clock'>
         {time}
     </div>
-  )
-}
+  );
+};

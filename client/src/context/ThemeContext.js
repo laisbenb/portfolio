@@ -8,5 +8,5 @@ export const ThemeArea = ({ children }) => {
         <ThemeMode.Provider value={[isDark, setIsDark]}>
             {children}
         </ThemeMode.Provider>
-    )
+    );
 };

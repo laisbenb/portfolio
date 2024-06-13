@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react'
-import { ThemeMode } from '../context/ThemeContext'
+import React, { useContext, useEffect } from 'react';
+import { ThemeMode } from '../context/ThemeContext';
 
 export default function ThemeSwitcher() {
     const [isDark, setIsDark] = useContext(ThemeMode);
@@ -10,7 +10,7 @@ export default function ThemeSwitcher() {
 
     const handleClick = () => {
         setIsDark(!isDark);
-    }
+    };
 
   return (
     <div>
@@ -18,5 +18,5 @@ export default function ThemeSwitcher() {
             <img src={isDark ? './media/images/sun_icon.png' : './media/images/moon_icon.png' } alt={isDark ? 'sun' : 'moon' } />
         </button>
     </div>
-  )
+  );
 }
