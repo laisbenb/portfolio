@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactForm() {
 
-    const onSubmit = async (event) => {
+    const sendEmail = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
     
@@ -27,7 +27,7 @@ export default function ContactForm() {
 
   return (
     <div className='contactPage--form'>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={sendEmail}>
             <div className='inputBox'>
                 <input type='text' className='field' placeholder='Full name' name='name' required />
             </div>
@@ -35,7 +35,7 @@ export default function ContactForm() {
                 <input type='email' className='field' placeholder='Email address' name='email' required />
             </div>
             <div className='inputBox'>
-                <textarea className='field mess' placeholder='Enter your message' name='message' required></textarea>
+                <textarea className='field field_message' placeholder='Enter your message' name='message' required></textarea>
             </div>
             <button type='submit'>Send message</button>
         </form>
