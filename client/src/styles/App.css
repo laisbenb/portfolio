@@ -50,6 +50,20 @@ body {
     color: hsl(183, 47%, 53%);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(183, 47%, 53%);
+  border-radius: .5rem;
+}
+
 /* == NAVIGATION == */
 .nav {
     background-color: hsl(222, 16%, 28%);
