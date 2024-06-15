@@ -338,12 +338,24 @@ footer {
             & .ExpressJS {
                 background-color: hsl(210, 11%, 15%);
             }
+
+            & .Handlebars {
+                background-color: hsl(13, 80%, 53%);
+            }
             
             & img {
                 width: 1.5rem;
             }
         }
     }
+}
+
+/* == CONTACT PAGE == */
+.contactPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* == LIGHT MODE == */
