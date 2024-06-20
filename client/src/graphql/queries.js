@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
 export const GET_SKILLS = gql`
-    query GetSkills {
+    query Skills {
         skills {
             skillTitle
             skillImage {
@@ -12,7 +12,7 @@ export const GET_SKILLS = gql`
 `;
 
 export const GET_TOOLS = gql`
-    query GetTools {
+    query Tools {
         tools {
           title
           image {
@@ -23,21 +23,22 @@ export const GET_TOOLS = gql`
 `;
 
 export const GET_PROJECTS = gql`
-    query MyQuery {
-        projects {
-          projectTitle
-          projectDescription
-          githubUrl
-          liveUrl
-          skills {
-            skillTitle
-            skillImage {
-              url
-            }
-          }
-          projectImage {
-            url
-          }
+  query Projects {
+    projects {
+      projectTitle
+      projectDescription
+      githubUrl
+      liveUrl
+      skills {
+        skillTitle
+        skillImage {
+          url
         }
       }
+      projectImage {
+        url
+      }
+      date
+    }
+  }
 `;

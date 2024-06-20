@@ -38,6 +38,7 @@ export default function Works() {
                         }
                     </div>
                     <p>{project.projectDescription}</p>
+                    <p><span className='blueBox'>{project.date}</span></p>
                 </div>
             ))
         }

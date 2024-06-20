@@ -50,6 +50,13 @@ body {
     color: hsl(183, 47%, 53%);
 }
 
+.blueBox {
+    background-color: hsl(183, 47%, 53%);
+    border: none;
+    border-radius: .8rem;
+    padding: 1rem .5rem;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
